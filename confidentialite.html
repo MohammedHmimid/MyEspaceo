@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confidentialité</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+
+    <style>
+
+    html{
+            overflow-x: hidden;
+        }
+
+    .link-contact{
+        transition: .5S ease;
+    }
+
+    .link-contact:hover{
+        color: #0f61fd;
+    }
+
+    @media only screen and (max-width: 1000px ){
+    
+    .navbar-nav{
+        background-color: #0f62fdde;
+        border-radius: 25px;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    .HH{
+        display: none;
+    }
+    .link-nav-bar{
+        color: white;
+    }
+
+    .text-reset{
+        display: none;
+    }
+}
+
+    </style>
+
+
+
+</head>
+<body>
+    
+
+    <!-- -----------------  navBar------------------------------ -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; z-index: 99999; width: 100%; height: 70px;">
+            
+        <div class="container-fluid">
+        
+            <button class="navbar-toggler"type="button"data-mdb-toggle="collapse"data-mdb-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+    
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+
+                    <img src="assets/images/logo/logo_myespaceo.png" class="HH" height="80px" alt="">
+
+                </a>
+
+                
+                    <ul class="navbar-nav me-auto  mb-lg-0">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Accueil</a>
+
+                        </li>
+
+                        <div class="btn-group m-4 d-flex justify-content-center">
+
+                            <li><a class="link-nav-bar" href="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> A Propos</a></li>
+
+                            <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" ></li>
+
+                            <ul class="dropdown-menu text-center bg-light p-5">
+
+                            <li><a class="dropdown-item text-primary" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; font-size: large;" href="nous.html">Qui sommes nous ?</a></li>
+
+                            <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"" href="notreExpertise.html">Notre expertise</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="btn-group m-4 d-flex justify-content-center">
+
+                            <li><a class="link-nav-bar" href="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Solutions</a></li>
+
+                            <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" ></li>
+
+                            <ul class="dropdown-menu text-center bg-light p-5">
+
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyOfrimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyInterimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyProspectimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MySolusoft</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyMarketimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyComparimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MySectorimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyUrbanimo</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="tarif.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Tarif</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="blog.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Le blog</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="contact.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Contact</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link bg-primary text-light p-2 m-3" style="border-radius: 10px; font-size: 16px;" href="#">Connexion</a>
+
+                        </li>
+
+                    </ul>
+                
+            </div>
+
+
+            <div class="align-items-center d-none m-3 d-sm-flex ">
+             
+                <div class="dropdown">
+
+                    <a class="text-reset me-5 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-linkedin-in" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-twitter" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-instagram" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-facebook" style="color: black;"></i>
+
+                        </a>
+
+                    </a>
+
+                </div>
+
+            </div>
+        
+            
+        
+        </div>
+        
+    </nav>
+
+
+
+
+    <!-- --------------confidentialites------------------ -->
+
+
+    <div class="p-5" style="background: black;">
+
+
+        <div class="paragraphes-head" style="padding: 70px;">
+
+            <div class="row">
+
+                <div class="m-3 col-lg-4 col-md-12 col-sm-4 col-12">
+                    <h1 class="display-1 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Confidentialité</h1>
+                </div>
+            
+            </div>
+
+            <div class="row">
+
+                <div>
+                    <p class=" m-3 fs-4 lead" style="font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Cette page définie la politique de confidentialité, indique les informations collectées ainsi que les raisons pour lesquelles elles sont collectées et, comment elles sont utilisées.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+<!-- ------------------ les articles-------------------- -->
+
+    <div class="row m-5">
+
+        <div class="col-10 mt-5 ">
+
+            <h1 class="fs-2 mt-5" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Article 1 – Les données collectées</h1>
+            <h1 class="fs-2 mt-5" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Collecte des données personnelles</h1>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Les données à caractère personnel qui sont collectées sur ce site sont les suivantes :</p>
+            <h1 class="fs-3 mt-5" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Ouverture de compte</h1>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lors de la création du compte de l’utilisateur, demande : nom, prénom et adresse électronique.</p>
+            <h1 class="fs-3 mt-5" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Connexion</h1>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lors de la connexion de l’utilisateur à la Plateforme, enregistrement : nom, prénom, données de connexion, et d’utilisation.</p>
+            <h1 class="fs-3 mt-5" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Profil</h1>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">L’utilisation des prestations prévues sur la plateforme permet de renseigner un profil, pouvant comprendre une adresse, et un numéro de téléphone.</p>
+            <h1 class="fs-3 mt-5" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Paiement</h1>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Dans le cadre du paiement des produits et prestations proposés sur la Plateforme, celle-ci n’enregistre pas les données financières relatives au compte bancaire ou à la carte de crédit de l’utilisateur.</p>
+            <h1 class="fs-3 mt-5" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Réalisation de la prestation</h1>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">La Plateforme collecte obligatoirement l’adresse postale utile du client pour réaliser la prestation de services demandés.</p>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Utilisation des données personnelles
+                Les données personnelles collectées auprès des utilisateurs ont pour objectif la mise à disposition des services de la Plateforme, leur amélioration et le maintien d’un environnement sécurisé :</p>
+            <li class="mt-5">Accès et utilisation de la Plateforme par l’utilisateur;</li>
+            <li class="mt-3">Gestion du fonctionnement et optimisation de la plateforme;</li>
+            <li class="mt-3">Organisation des conditions d’utilisation des Services de paiement;</li>
+            <li class="mt-3">Vérification, identification et authentification des données transmises par l’utilisateur;</li>
+            <li class="mt-3">Mise en œuvre d’une assistance utilisateurs;</li>
+            <li class="mt-3">Prévention et détection des fraudes, malwares et gestion des incidents de sécurité;</li>
+            <li class="mt-3">Gestion des éventuels litiges avec utilisateurs;</li>
+            <li class="mt-3">Envoi d’informations commerciales et publicitaires, en fonction des préférences de l’utilisateur.</li>
+            <li class="mt-3">Partage des données personnelles avec des tiers</li>
+            <p class="fs-5 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">En application de la réglementation applicable aux données à caractère personnel, les utilisateurs disposent des droits suivants :</p>
+            <li class="mt-5">Ils peuvent mettre à jour ou supprimer les données qui les concernent en se connectant à leur compte et en configurant les paramètres de ce compte;</li>
+            <li class="mt-3">Ils peuvent supprimer leur compte. Il est à noter que les informations partagées avec d’autres utilisateurs, comme les publications sur les forums peuvent rester visibles du public sur la Plateforme, même après la suppression de leur compte;</li>
+            <li class="mt-3">Ils peuvent exercer leur droit d’accès, pour connaître les données personnelles les concernant. Dans ce cas, avant la mise de ce droit, la Plateforme peut demander une preuve de l’identité de l’utilisateur afin d’en vérifier l’exactitude;</li>
+            <li class="mt-3">Si les données à caractère personnel détenues par la plateforme sont inexactes, ils peuvent demander la mise à jour des informations;</li>
+            <li class="mt-3">Les utilisateurs peuvent demander la suppression de leurs données à caractère personnel, conformément aux lois applicables en matière de protection des données.</li>
+            <li class="mt-3">Évolution de la présente clause</li>
+            <p class="fs-5 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">La Plateforme se réserve le droit d’apporter toute modification à la présente clause relative à la protection des données à caractère personnel à tout moment. Si une modification est apportée à la présente clause de protection des données à caractère personnel, la Plateforme s’engage à publier la nouvelle version sur son site. La Plateforme informera également les utilisateurs de la modification par messagerie électronique, avant la date d’effet. Si l’utilisateur n’est pas d’accord avec les termes de la nouvelle rédaction de la clause de protection des données à caractère personnel, il a possibilité de supprimer son compte.</p>
+            <h1 class="fs-3 mt-5" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Article 2- Utilisation des Cookies</h1>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Ensemble des informations envoyées par le serveur dans un fichier situé sur l’ordinateur du client qui est automatiquement renvoyé lors de chaque nouvelle connexion à ce dernier. <br> Les cookies sont utilisés dans le cadre de l’utilisation du site. L’utilisateur a la possibilité de désactiver les cookies à partir des paramètres de son navigateur. <br> Les cookies sont collectés avec le consentement de l’utilisateur. Ils sont conservés pendant une période n’excédant pas 13 mois.
+                Les cookies permettent d’élaborer des statistiques de fréquentation permettant notamment à l’éditeur de détecter les problèmes de navigation.</p>
+            <p class="fs-6 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Pour cela, l’utilisateur :</p>
+            <li class="mt-5">Est informé;</li>
+            <li class="mt-3">Et possède la faculté de s’y opposer par l’intermédiaire d’un mécanisme d’opposition facilement utilisable;</li>
+            <li class="mt-3">Les cookies ne dépasseront pas une durée excédant 13 mois.</li>
+            <p class="fs-5 mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Conformément à l’article 39 de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, modifié par la loi n°2004-801 du 6 août 2004 (art.5), tout visiteur ou client dispose d’un droit d’accès, de modification, de rectification et de suppression des données qui le concernent éventuellement. Les demandes sont traitées dans un délai minimal d’un mois et maximal de quatre mois.
+                Conformément à la loi n°78-17 du Janvier 1978 relative à l’informatique, aux fichiers et aux libertés, modifié par la loi n°2004-801 du 6 août 2004, les données personnelles sont conservées uniquement le temps de l’opération, mais il arrive parfois qu’il y ait un besoin d’archivage de la part du professionnel, par exemple, des données permettant d’établir la preuve d’un droit ou d’un contrat, ou conservées au titre du respect d’une obligation légale.</p>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid" style="background: #0f61fd;">
+
+        <div class="row">
+
+            <div class="col-10 col-md-12 col-sm-10 m-5">
+
+                <h2 class="text-center text-light" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Coming Soon : Du rêve à la réalité, un seul clic !</em> </h2>
+
+            </div>
+
+            <div class="col-12 col-md-11 col-sm-10 m-2">
+
+                <p class="text-light fs-5 text-center" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em> Le lancement aura lieu très prochainement. Veuillez nous communiquer vos coordonnées ci-dessous, Vous serez alors informé du lancement officiel par mail. Join MyEspaceo User ❤️ </em></p>
+
+            </div>
+
+            <div class="container mt-3 d-flex justify-content-around">
+
+                <div class="col-lg-4 col-md-5 col-sm-5 form-group">
+
+                    <input type="email" class="form-control p-2" placeholder="Nom complet *">
+
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-sm-5 form-group">
+
+                    <input type="email" class="form-control p-2" placeholder="Société / Agence *">
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="container mt-4 d-flex justify-content-around">
+
+                <div class="col-lg-4 col-md-5 col-sm-5 form-group">
+
+                    <input type="email" class="form-control p-2" placeholder="Email *">
+
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-sm-5 form-group">
+
+                    <input type="email" class="form-control p-2" placeholder="Téléphone *">
+
+                </div>
+
+                
+
+            </div>
+
+            <div class="col-lg-12 p-5 d-flex justify-content-center col-md-12 col-sm-12 col-12 buton-blog">
+
+                <button class="p-3 text-light" style="border: none; width: 250px; font-size: 18px; background-color: blue; border-radius: 50px;">Envoyez la demande <i class="fa-solid fa-arrow-right" style="color: white;"></i></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="container-fluid" id="contact" style="background: black;">
+
+        <div class="row">
+
+            <div class="col-lg-2 m-4 col-md-3 col-sm-5">
+
+                <img src="assets/images/logo/logo_myespaceo_light.png" style="height: 60px;" alt="MyEspaceo-logo"> <br>
+
+                <div class="m-4">
+
+                    <a href="#" class="text-reset m-1">
+        
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1">
+
+                        <i class="fa-brands fa-twitter" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1">
+
+                        <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1 ">
+
+                        <i class="fa-brands fa-facebook" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-5 m-4">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Entreprise</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="nous.html"><span class="link-contact">Qui sommes nous ?</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="jobs.html"><span class="link-contact"> Nous rejoindre</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="contact.html"><span class="link-contact">Nous contacter</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="mention-legale.html"><span class="link-contact">Mentions légales</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="confidentialite.html"><span class="link-contact">Confidentialité</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light " style="font-size: 18px;" href="Conditions Generales.html"><span class="link-contact">Conditions générales</span> </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-5 m-4">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Découvrir</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="Nos solutions.html"><span class="link-contact">Nos solutions</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="notreExpertise.html"><span class="link-contact">Notre expertise</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="tarif.html"><span class="link-contact">Nos tarifs</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="blog.html"><span class="link-contact">Notre blog</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="centre-d'aide.html"><span class="link-contact">Centre d'aide</span> </a> <br>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 m-4 col-sm-5 col-6">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Studio</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <p class="text-light" style="line-height: 40px;">128 Rue La Boétie,<br>75008 – Paris, France</p> 
+
+                    <a class=" text-light link-contact" style="font-size: 18px;" href=""><span class="link-contact">hello@myespaceo.com</span> </a>
+                    
+                    <p class="text-light">+33 1 76 38 14 65</p> 
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 p-5 text-center">
+
+                <p class="text-light text-center">© 2015-2023 myespaceo.com - MyEspaceo, c’est du vrai tout-en-un !</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+</body>
+</html>

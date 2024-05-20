@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui somme nous</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+    <style>
+
+        html{
+            overflow-x: hidden;
+        }
+
+
+    .link-nav-bar{
+        color: black;
+        transition: .3s ease;
+    }
+
+    .link-nav-bar:hover{
+        color: #0f61fd;
+    }
+
+
+    .link-contact{
+        transition: .5S ease;
+    }
+
+    .link-contact:hover{
+        color: #0f61fd;
+    }
+
+    @media only screen and (max-width: 1000px ){
+    
+        .navbar-nav{
+            background-color: #0f62fdde;
+            border-radius: 25px;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        .HH{
+            display: none;
+        }
+        .link-nav-bar{
+            color: white;
+        }
+        .text-reset{
+            display: none;
+        }
+    }
+
+   
+
+
+    </style>
+
+</head>
+<body>
+    
+        <!-- -----------------  navBar------------------------------ -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; z-index: 99999; width: 100%; height: 70px;">
+            
+            <div class="container-fluid">
+            
+                <button class="navbar-toggler"type="button"data-mdb-toggle="collapse"data-mdb-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                    <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+    
+                        <img src="assets/images/logo/logo_myespaceo.png" class="HH" height="80px" alt="">
+    
+                    </a>
+    
+                    
+                        <ul class="navbar-nav me-auto  mb-lg-0">
+    
+                            <li class="nav-item">
+    
+                                <a class="nav-link m-3 link-nav-bar" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Accueil</a>
+    
+                            </li>
+    
+                            <div class="btn-group m-4 d-flex justify-content-center">
+    
+                                <li><a class="link-nav-bar" href="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> A Propos</a></li>
+    
+                                <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" ></li>
+    
+                                <ul class="dropdown-menu text-center bg-light p-5">
+    
+                                <li><a class="dropdown-item text-primary" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="nous.html">Qui sommes nous ?</a></li>
+    
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="notreExpertise.html">Notre expertise</a></li>
+    
+                                </ul>
+    
+                            </div>
+    
+                            <div class="btn-group m-4 d-flex justify-content-center">
+    
+                                <li><a class="link-nav-bar" href="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Solutions</a></li>
+    
+                                <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" ></li>
+    
+                                <ul class="dropdown-menu text-center bg-light p-5">
+    
+                                    <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyOfrimo</a></li>
+                                    <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyInterimo</a></li>
+                                    <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyProspectimo</a></li>
+                                    <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MySolusoft</a></li>
+                                    <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyMarketimo</a></li>
+                                    <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyComparimo</a></li>
+                                    <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MySectorimo</a></li>
+                                    <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyUrbanimo</a></li>
+    
+                                </ul>
+    
+                            </div>
+    
+                            <li class="nav-item">
+    
+                                <a class="nav-link m-3 link-nav-bar" href="tarif.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Tarif</a>
+    
+                            </li>
+    
+                            <li class="nav-item">
+    
+                                <a class="nav-link m-3 link-nav-bar" href="blog.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Le blog</a>
+    
+                            </li>
+    
+                            <li class="nav-item">
+    
+                                <a class="nav-link m-3 link-nav-bar" href="contact.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Contact</a>
+    
+                            </li>
+    
+                            <li class="nav-item">
+    
+                                <a class="nav-link bg-primary text-light p-2 m-3" style="border-radius: 10px; font-size: 16px;" href="#">Connexion</a>
+    
+                            </li>
+    
+                        </ul>
+                    
+                </div>
+    
+    
+                <div class="align-items-center d-none m-3 d-sm-flex ">
+                 
+                    <div class="dropdown">
+    
+                        <a class="text-reset me-5 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+    
+                            <a href="#" class="text-reset me-3">
+    
+                                <i class="fa-brands fa-linkedin-in" style="color: black;"></i>
+    
+                            </a>
+    
+                            <a href="#" class="text-reset me-3">
+    
+                                <i class="fa-brands fa-twitter" style="color: black;"></i>
+    
+                            </a>
+    
+                            <a href="#" class="text-reset me-3">
+    
+                                <i class="fa-brands fa-instagram" style="color: black;"></i>
+    
+                            </a>
+    
+                            <a href="#" class="text-reset me-3">
+    
+                                <i class="fa-brands fa-facebook" style="color: black;"></i>
+    
+                            </a>
+    
+                        </a>
+    
+                    </div>
+    
+                </div>
+            
+                
+            
+            </div>
+            
+        </nav>
+
+
+
+
+
+<!-- --------------------MyEspaceo--------------- -->
+
+
+        <div class="p-5" style="background: black; ;">
+
+
+            <div class="paragraphes-head" style="padding: 70px;">
+    
+                <p class=" m-5 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing: 5px;">À PROPOS DE NOUS</p>
+    
+                <div class="row">
+    
+                    <div class="m-3 col-lg-7 col-md-12 col-sm-12 col-12">
+                        <h1 class="display-1 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Qu’est ce que MyEspaceo ?</h1>
+                    </div>
+                
+                </div>
+    
+                <div class="row">
+    
+                    <div>
+                        <p class="fs-4 lead" style="font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;"><span class="text-light">MyEspaceo</span> est une approche immobilière 3.0, une interface regroupant dans un même espace dédié, toutes les applications et les datas immobilières nécessaires aux professionnels, pour travailler mieux, plus vite, et à moindre coût..</p>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+    
+        </div>
+
+
+        
+
+        <div class="row m-5">
+
+                <div class="col-lg-5 col-10 m-3">
+
+                    <h4 class="text-dark p-3" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Mission de MyEspaceo</h4>
+
+                    <p class="p-3" style="opacity: .7; font-size: 18px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Disrupter la méthode de travail des professionnels de l’immobilier, pour faciliter leur transition vers la digitalisation, mais aussi et surtout, pour leur permettre d’utiliser toutes les nouvelles technologies disponibles et à venir. MyEspaceo n’est pas une destination mais un voyage.</p>
+
+                </div>
+
+                <div class="col-lg-5 col-10 m-3">
+
+                    <h4 class="text-dark p-3" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Notre vision</h4>
+
+                    <p class="p-3" style="opacity: .7; font-size: 18px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Nous voulons rassembler et connecter les différents acteurs immobiliers, dans un marché immobilier transparent et compréhensible. Nous optons pour un immobilier qui rassemble les professionnels.</p>
+
+                </div>
+
+                <div class="col-12 m-3">
+
+                    <h4 class="text-dark p-3" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Pourquoi MyEspaceo ?</h4>
+
+                    <p class="p-3" style="opacity: .7; font-size: 18px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">MyEspaceo suit continuellement toutes les innovations et évolutions technologiques, pour les intégrer dans toutes les applications immobilières de l’interface. MyEspaceo utilise le Big Data immobilier, les avancées en matière d’intelligence artificielle, dont le machine learning, la reconnaissance par l’imagerie, par la voix ou l’OCR, pour s’adapter aux critères définissant la nouvelle génération d’applications sur le web 3.0.
+                        L’interface MyEspaceo valorise le concept de connectivité. Ceci est synonyme de renforcement de la relation entre les membres de votre agence, de création de nouvelles alliances avec d’autres acteurs sur votre secteur, et surtout de consolider votre connaissance et maîtrise des évolutions du marché immobilier en temps réel.</p>
+
+                </div>
+
+                <div class="col-12 m-3">
+
+                    <p class="p-3" style="opacity: .7; font-size: 18px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">De plus, toutes les applications de l’interface sont interconnectées, de manière à ce que toutes vos données soient synchronisées, et connectées au marché immobilier en temps réel.</p>
+
+                </div>
+
+                <div class="col-12 m-3">
+
+                    <p class="p-3" style="opacity: .7; font-size: 18px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Maintenir la qualité de l’expérience de nos clients sur l’interface MyEspaceo est notre priorité. Nous mettons votre satisfaction et votre confort au cœur de nos préoccupations, pour cela, nos équipes œuvrent au quotidien pour améliorer et fluidifier votre utilisation de l’interface. Toute notre recherche et développement se fait autour d’une réalité terrain, car tout est réfléchi par des pros de l’immobilier pour des pros de l’immobilier.</p>
+
+                </div>
+
+                <div class="col-12 m-3">
+
+                    <p class="p-3" style="opacity: .7; font-size: 18px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">imer l’immobilier pour innover et offrir des solutions intelligentes et créatrices de valeurs. Nous utilisons les nouvelles technologies pour permettre à l’utilisateur d’être une meilleure version de lui-même.</p>
+
+                </div>
+
+        </div>
+
+
+
+
+
+<!-- -------------------Philipe-------------------------------- -->
+
+
+            <div class="container d-flex align-items-center" style="background-color: #0f61fd; border-radius: 10px; height: 500px;">
+
+                <div class="row m-4 d-flex justify-content-around">
+
+                    <div class="col-lg-7 col-md-7 col-sm-10 col-10 m-2 mt-5">
+
+                        <p class="text-light fs-4 " style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">"<b> MYREST.AI</b> arrive avec son expertise et son savoir-faire en matière de nouvelles technologies, pour disrupter le monde de l’immobilier. "</p>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-0 col-0 m-2 mt-5">
+
+                        <div style="border-radius: 50%;">
+
+                            <img src="assets/images/logo/philipe.jpg" alt="" style="height: 150px; border-radius: 50%;">
+
+                            <h3 class="text-light m-3"><b>Philippe Soulié</b><br><span style="font-size:20px;"> Founder & CEO </span></h3>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+<!-- ----------------------Mmembers----------------------- -->
+
+
+
+
+            <div class="container-fluid mt-3" style="background: black;">
+
+                <div class="row">
+
+                    <div class="col-lg-12 mt-5">
+
+                        <h1 class="text-center text-light mt-5" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b> Qui sommes-nous ?</b></h1>
+
+                    </div>
+
+                    <div class="col-lg-12 mt-5 ">
+
+                        <p class="text-center text-light fs-5" style=" opacity:.9; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Nous sommes des experts avérés qui, depuis 1998, maîtrisons tous les aspects de la transaction immobilière. Ce qui nous importe aujourd’hui est de garder un temps d’avance sur les évolutions de demain, proposer ce qui n’existe pas encore sur le marché, pour vous apporter les meilleurs conseils et la meilleure expérience. Grâce à nos solutions, vous allez maîtriser la data comme jamais auparavant, ce qui vous conférera un niveau d’expertise inégalé vis-à-vis de vos futurs clients.</p>
+
+                    </div>
+
+                    <div class="col-lg-12 mt-5 ">
+
+                        <p class="text-center text-light fs-5" style=" font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><span class="fs-4"><b>MyEspaceo</b> </span>, la science immobilière alliée à l'expertise immobilière.</p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="row mt-5 ms-3">
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/philipe.jpg" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b> Philippe Soulié</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">CEO & Fondateur</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/Abderrahim.jpg" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Habib</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">CTO & Co-fondateur</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/Serge-uai-258x258.jpg" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Serge Soulié</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">COO</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/Latifa.jpg" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Latifa Boully</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Moyen Orient</p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/Azeddine-uai-258x258.png" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Azeddine Hmimid</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">General Project Manager</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/men.jpg" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Mènouar Bouguir</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Responsable commercial</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/MyRestAi-Bais.jpg" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Barrie Duggan</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Security Officer</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/MyRestAi-Petter.jpg" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Petter Jeffes</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Relation Public</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/omar-uai-258x258.jpeg" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Omar Am'hamdi</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Développement international</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+
+                        <img src="assets/images/logo/Soutenance.jpg" width="250px" height="250px" alt="">
+
+                        <div class="mt-5">
+
+                            <em class="text-light fs-5"><b>Mohammed HMIMID </b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Security Officer</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-6 m-5">
+
+                            <em class="mt-5 text-light fs-1"><b> +22</b></em>
+
+                            <p class="mt-2 text-light" style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Membres</p>
+
+                        </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="container-fluid" style="background: #0f61fd;">
+
+                <div class="row">
+
+                    <div class="col-10 col-md-12 col-sm-10 m-5">
+
+                        <h2 class="text-center text-light" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Coming Soon : Du rêve à la réalité, un seul clic !</em> </h2>
+
+                    </div>
+
+                    <div class="col-10 col-md-11 col-sm-10 m-2">
+
+                        <p class="text-light fs-5 text-center" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em> Le lancement aura lieu très prochainement. Veuillez nous communiquer vos coordonnées ci-dessous, Vous serez alors informé du lancement officiel par mail. Join MyEspaceo User ❤️ </em></p>
+
+                    </div>
+
+                    <div class="container mt-3 d-flex justify-content-around">
+
+                        <div class="col-lg-4 col-md-5 col-sm-5 form-group">
+
+                            <input type="email" class="form-control p-2" placeholder="Nom complet *">
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-sm-5 form-group">
+
+                            <input type="email" class="form-control p-2" placeholder="Société / Agence *">
+
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="container mt-4 d-flex justify-content-around">
+
+                        <div class="col-lg-4 col-md-5 col-sm-5 form-group">
+
+                            <input type="email" class="form-control p-2" placeholder="Email *">
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-5 col-sm-5 form-group">
+
+                            <input type="email" class="form-control p-2" placeholder="Téléphone *">
+
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="col-lg-12 p-5 d-flex justify-content-center col-md-12 col-sm-12 col-12 buton-blog">
+
+                        <button class="p-3 text-light" style="border: none; width: 250px; font-size: 18px; background-color: blue; border-radius: 50px;">Envoyez la demande <i class="fa-solid fa-arrow-right" style="color: white;"></i></button>
+        
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+
+
+            <div class="container-fluid mt-5" id="contact" style="background: black;">
+
+                <div class="row">
+        
+                    <div class="col-lg-2 m-4 col-md-5 col-sm-5">
+        
+                        <img src="assets/images/logo/logo_myespaceo_light.png" style="height: 60px;" alt="MyEspaceo-logo"> <br>
+        
+                        <div class="m-4">
+        
+                            <a href="#" class="text-reset m-1">
+                
+                                <i class="fa-brands fa-linkedin-in" style="color: #ffffff; font-size: 25px;"></i>
+        
+                            </a>
+        
+                            <a href="#" class="text-reset m-1">
+        
+                                <i class="fa-brands fa-twitter" style="color: #ffffff; font-size: 25px;"></i>
+        
+                            </a>
+        
+                            <a href="#" class="text-reset m-1">
+        
+                                <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 25px;"></i>
+        
+                            </a>
+        
+                            <a href="#" class="text-reset m-1 ">
+        
+                                <i class="fa-brands fa-facebook" style="color: #ffffff; font-size: 25px;"></i>
+        
+                            </a>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-lg-3 col-md-5 col-sm-5 m-4">
+        
+                        <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Entreprise</h2>
+        
+                        <div class="mt-5 ms-3">
+        
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="nous.html"><span class="link-contact">Qui sommes nous ?</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="jobs.html"><span class="link-contact"> Nous rejoindre</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="contact.html"><span class="link-contact">Nous contacter</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="mention-legale.html"><span class="link-contact">Mentions légales</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="confidentialite.html"><span class="link-contact">Confidentialité</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light " style="font-size: 18px;" href="Conditions Generales.html"><span class="link-contact">Conditions générales</span> </a>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-lg-3 col-md-5 col-sm-5 m-4">
+        
+                        <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Découvrir</h2>
+        
+                        <div class="mt-5 ms-3">
+        
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="Nos solutions.html"><span class="link-contact">Nos solutions</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="notreExpertise.html"><span class="link-contact">Notre expertise</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="tarif.html"><span class="link-contact">Nos tarifs</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="blog.html"><span class="link-contact">Notre blog</span> </a> <br>
+                            <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="centre-d'aide.html"><span class="link-contact">Centre d'aide</span> </a> <br>
+                            
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-lg-2 m-4 col-sm-5 col-6">
+        
+                        <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Studio</h2>
+        
+                        <div class="mt-5 ms-3">
+        
+                            <p class="text-light" style="line-height: 40px;">128 Rue La Boétie,<br>75008 – Paris, France</p> 
+        
+                            <a class=" text-light link-contact" style="font-size: 18px;" href=""><span class="link-contact">hello@myespaceo.com</span> </a>
+                            
+                            <p class="text-light">+33 1 76 38 14 65</p> 
+        
+                        </div>
+        
+                    </div>
+        
+        
+                    <div class="col-12 p-5 text-center">
+        
+                        <p class="text-light text-center">© 2015-2023 myespaceo.com - MyEspaceo, c’est du vrai tout-en-un !</p>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+</body>
+</html>

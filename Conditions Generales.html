@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales de vente</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+
+
+
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+
+        .section-black {
+            z-index: -100;
+            height: 100vh;
+        }
+
+
+        .section2 {
+            border-radius: 15px;
+            margin-top: -200px;
+        }
+
+        .head-section2 {
+            font-size: 25px;
+            font-weight: 700;
+            color: white;
+            padding: 70px;
+
+        }
+
+        .paragraphe-section2 {
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            padding: 15px;
+        }
+
+        .paragraphe2-section2 {
+            font-size: 25px;
+            font-weight: 400;
+            color: rgba(36, 33, 33, 0.589);
+            padding: 20px;
+
+        }
+
+        .link-contact{
+        transition: .5S ease;
+    }
+
+    .link-contact:hover{
+        color: #0f61fd;
+    }
+
+    @media only screen and (max-width: 1000px ){
+    
+    .navbar-nav{
+        background-color: #0f62fdde;
+        border-radius: 25px;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    .HH{
+        display: none;
+    }
+    .link-nav-bar{
+        color: white;
+    }
+
+    .text-reset{
+        display: none;
+    }
+}
+
+    </style>
+
+
+
+</head>
+
+<body style="margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; border: none; outline: none;">
+
+
+
+
+
+
+
+    <!-- -----------------  navBar------------------------------ -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+        style="position: fixed; z-index: 99999; width: 100%; height: 70px;">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+
+                    <img src="assets/images/logo/logo_myespaceo.png" class="HH" height="80px" alt="">
+
+                </a>
+
+
+                <ul class="navbar-nav me-auto  mb-lg-0">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link m-3 link-nav-bar" href="index.html"
+                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Accueil</a>
+
+                    </li>
+
+                    <div class="btn-group m-4 d-flex justify-content-center">
+
+                        <li><a class="link-nav-bar" href=""
+                                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                A Propos</a></li>
+
+                        <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                            aria-expanded="false"></li>
+
+                        <ul class="dropdown-menu text-center bg-light p-5">
+
+                            <li><a class="dropdown-item text-primary"
+                                    style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: large;"
+                                    href="nous.html">Qui sommes nous ?</a></li>
+
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"" href="
+                                    notreExpertise.html">Notre expertise</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="btn-group m-4 d-flex justify-content-center">
+
+                        <li><a class="link-nav-bar" href=""
+                                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Solutions</a>
+                        </li>
+
+                        <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                            aria-expanded="false"></li>
+
+                        <ul class="dropdown-menu text-center bg-light p-5">
+
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"
+                                    href="#">MyOfrimo</a></li>
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"
+                                    href="#">MyInterimo</a></li>
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"
+                                    href="#">MyProspectimo</a></li>
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"
+                                    href="#">MySolusoft</a></li>
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"
+                                    href="#">MyMarketimo</a></li>
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"
+                                    href="#">MyComparimo</a></li>
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"
+                                    href="#">MySectorimo</a></li>
+                            <li><a class="dropdown-item text-primary "
+                                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"
+                                    href="#">MyUrbanimo</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link m-3 link-nav-bar" href="tarif.html"
+                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Tarif</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link m-3 link-nav-bar" href="blog.html"
+                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Le
+                            blog</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link m-3 link-nav-bar" href="contact.html"
+                            style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Contact</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link bg-primary text-light p-2 m-3" style="border-radius: 10px; font-size: 16px;"
+                            href="#">Connexion</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="align-items-center d-none m-3 d-sm-flex ">
+
+                <div class="dropdown">
+
+                    <a class="text-reset me-5 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-linkedin-in" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-twitter" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-instagram" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-facebook" style="color: black;"></i>
+
+                        </a>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- --------------CGV---------------------- -->
+
+
+    <div class="p-5" style="background: black;">
+
+
+        <div class="paragraphes-head" style="padding: 70px;">
+
+            <p class=" m-5 col-12"
+                style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing: 5px;">
+                CONDITIONS GÉNÉRALES D’UTILISATION / VENTE</p>
+
+            <div class="row">
+
+                <div class="m-3 col-lg-4 col-md-12 col-sm-4 col-12">
+                    <h1 class="display-1 text-light"
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">CGV</h1>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div>
+                    <p class=" m-3 fs-4 text-light"
+                        style="letter-spacing: 2px; font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">
+                        Les présentes conditions générales de vente ont pour objet de régir les droits et obligations de
+                        l’agence (La société MYREST.AI qui exploite, commercialise et édite l’application MyEspaceo) et
+                        de son client (l’utilisateur qui a souscrit à MyEspaceo) dans le cadre de la vente de l’ensemble
+                        des applications fournies par MyEspaceo. Les présentes conditions générales sont applicables à
+                        toutes les commandes effectuées avec notre agence immobilière</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- ------------------les articles----------------- -->
+
+
+    <div class="row m-5">
+
+        <div class="col-lg-12 col-sm-12 col-10 m-5">
+
+            <h2 class="fs-2"
+                style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Article 1 : Obligations de MyEspaceo</h2>
+
+            <p class="fs-5 mt-5"
+                style="opacity: .8;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                La société MYREST.AI qui exploite et commercialise l’application MyEspaceo s’engage à donner un accès à
+                ses outils à son client dans la mesure où celui-ci est bien à jour de ses paiements et qu’il respecte
+                ses obligations contractuelles. Le client pourra donc faire bénéficier les applications en ligne à
+                jusqu’à 10 utilisateurs faisant partie de sa société, et sur le nombre de codes postaux qu’il souhaite
+                en corrélation avec l’abonnement qu’il a choisi.</p>
+
+            <h2 class="fs-2 mt-5"
+                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: black;">
+                Article 2 : Abonnement, durée d’engagement, résiliation</h2>
+
+            <p class="fs-5 mt-5"
+                style="opacity: .8;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Une fois le client a choisi la formule d’abonnement qu’il souhaite dès sa souscription, il reçoit un
+                e-mail de confirmation. Le présent contrat est accepté et consenti pour une période irrévocable soit
+                d’un mois minimum si le client a choisi une formule d’abonnement mensuelle, soit d’un an minimum si le
+                client a choisi une formule d’abonnement annuelle. Passé ce délai, il sera prorogé pour la même durée
+                par tacite reconduction. Chacune des parties pourra y mettre un terme avec un préavis de 15 jours par
+                lettre recommandée auprès de la société ou directement sur le site MyEspaceo.com si l’abonnement a été
+                souscrit en ligne. Dans le cas où la résiliation n’était pas envoyée dans le délai imparti, la période
+                minimale serait automatiquement reconduite, et le client s’engage à honorer les échéances restantes.</p>
+
+            
+
+            <h2 class="fs-2 mt-5"
+                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: black;">
+                Article 3 : Responsabilité</h2>
+
+            <p class="fs-5 mt-5"
+                style="opacity: .8;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Le client reconnaît qu’il accède simplement à un outil lui permettant de gagner du temps, puisque la
+                plateforme MyEspaceo regroupe des outils digitaux pour les agences, les mandataires indépendants et les
+                réseaux d’agences. Toutefois, la société MYREST.AI ne pourra être recherchée pour une mauvaise
+                utilisation de ces outils. Seul le client va utiliser ces données pour son activité, à lui de respecter
+                le cadre légal et la législation en vigueur, s’il est écrit sur une annonce « pas de démarchage
+                commerciale ou agence s’abstenir », il ne doit en aucun cas contacter commercialement le vendeur ou le
+                bailleur. Notre plateforme est un support pour pouvoir visualiser le marché et éventuellement comparer
+                les biens concurrents à ceux qu’il a en mandat.</p>
+
+            <h2 class="fs-2 mt-5"
+                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: black;">
+                Article 4 : Fonctionnalités participatives d’échange de données entre utilisateurs</h2>
+
+            <p class="fs-5 mt-5"
+                style="opacity: .8;  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Le client reconnaît qu’il est parfaitement informé qu’en utilisant la plateforme MyEspaceo, et en
+                annotant certaines informations sur les annonces par lui-même ou l’ensemble de ses collaborateurs,
+                celles-ci sont susceptibles d’être répercutées sur l’ensemble des utilisateurs de MyEspaceo. Cette
+                particularité permettra au client de pouvoir avoir plus d’informations par annonces (e-mails, SMS et
+                WhatsApp), notamment la localisation exacte, ou plus d’informations sur l’annonceur grâce à la
+                complétion des autres utilisateurs en France et clients.</p>
+
+
+            <h2 class="fs-2 mt-5"
+                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: black;">
+                Article 5 : Support</h2>
+
+            <p class="fs-5 mt-5"
+                style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                En cas de soucis récurrents ou de problèmes techniques sur notre plateforme MyEspaceo, le client pourra
+                contacter le service support , nous tenterons de lui apporter une réponse ou de résoudre le problème
+                sous 48 Heures. Toutefois, nous n’interviendrons pas dans la formation à l’utilisation, ou s’il s’agit
+                d’un problème d’affichage ou de bugs étant dû au matériel informatique du client. Notre solution a été
+                testée sur divers matériels informatiques (PC, MAC, IOS, Android, etc..)</p>
+
+            <h2 class="fs-2 mt-5"
+                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: black;">
+                Article 6 : Conformité RGPD</h2>
+
+            <p class="fs-5 mt-5 "
+                style="opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                MyEspaceo est engagée dans le respect de la réglementation en vigueur applicable au traitement de
+                données à caractère personnel et, en particulier, le règlement (UE) 2016/679 du Parlement européen et du
+                Conseil du 27 avril 2016, ou RGPD. <br><br>
+
+                Les données étant le cœur de notre métier, MyEspaceo atteste depuis 2021, être en conformité avec le
+                RGPD, et traite vos données de façon pertinente, non excessive et strictement nécessaire à l’atteinte de
+                nos finalités. <br><br>
+
+                Dans le cadre de leurs relations contractuelles, les parties s’engagent à respecter la réglementation en
+                vigueur applicable au traitement de données à caractère personnel et, en particulier, le règlement (UE)
+                2016/679 du Parlement européen et du Conseil du 27 avril 2016 applicable à compter du 25 mai 2018
+                (ci-après, « le règlement européen sur la protection des données »). <br><br>
+
+                Les parties reconnaissent que MyEspaceo et le client sont co-responsables de la détermination des
+                finalités et moyens relatifs au traitement des données personnelles et qu’ils interviennent en tant que
+                responsables de traitement au sens de la loi 78-17 du 6 janvier 1978 modifiée et du règlement (UE)
+                2016/679 du parlement européen et du conseil du 27 avril 2016. <br><br>
+
+                MyEspaceo attire l’attention du client sur les obligations qui incombent aux responsables de traitement
+                au titre des dispositions légales et réglementaires précitées et consistant notamment à : <br><br>
+
+                Informer et, le cas échéant, recueillir le consentement implicite et explicite des personnes concernées
+                via l’envoi d’un sms ; <br><br>
+
+                S’assurer du respect des droits d’accès, de rectification, d’effacement, de limitation de portabilité et
+                d’opposition au traitement des données et de permettre aux personnes la possibilité de définir des
+                directives anticipées sur le devenir des données après le décès via une interface en ligne mais
+                également directement auprès de nos services commerciaux, administratifs ou techniques ; <br><br>
+
+                Définir une durée de conservation des données adéquate et pertinente de 1 ans à compter de la relève de
+                l’annonce pour les données à caractère personnel comme le numéro de téléphone et le pseudo, et de 3 ans
+                pour les données n’ayant pas un caractère personnel; <br><br>
+
+                Assurer la protection, la confidentialité, l’intégrité et la sécurité des données à caractère personnel
+                collectées notamment grâce à des moyens permettant de garantir la confidentialité, l’intégrité, la
+                disponibilité et la résilience constantes des systèmes et des services de traitement. Des moyens
+                permettant de rétablir la disponibilité des données à caractère personnel et l’accès à celle-ci dans des
+                délais appropriés en cas d’incident physique ou technique. <br><br>
+
+                MyEspaceo met également en place des procédures permettant de tester, analyser et évaluer régulièrement
+                l’efficacité des mesures techniques et organisationnelles pour assurer la sécurité du traitement.
+                <br><br>
+
+                Il sera possible pour le client le tri des annonces, l’annotation de ces annonces avec les différentes
+                actions réalisées par celui-ci. La gestion d’un agenda, la consultation d’un tableau de bord, la gestion
+                de la formule d’abonnement, la gestion de codes postaux utilisés, la gestion d’une équipe de
+                collaborateurs, la modification des coordonnées et du compte. <br><br>
+
+                La génération d’une clé API est disponible, le responsable du traitement restera le même étant donné que
+                les données seront hébergées et récoltées par la même entité. <br><br>
+
+                Registres de traitements 30.1 et Mentions Légales 13.1 déclarées en conformité par le Délégué à la
+                Protection des Données et le Responsable de traitement en 2021 selon la réglementation (UE) 2016/679 du
+                Parlement européen et du Conseil du 27 avril 2016, ou RGPD. <br><br>
+            </p>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container-fluid" style="background: #0f61fd;">
+
+        <div class="row">
+
+            <div class="col-10 col-md-12 col-sm-10 m-5">
+
+                <h6 class="text-center text-light m-5 " style="letter-spacing: 10px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>MYESPACEO, CE N’EST PAS DU RÊVE, C’EST VOTRE RÉALITÉ !</em> </h6>
+
+            </div>
+
+            <div class="col-12 col-md-11 col-sm-10 m-2">
+
+                <p class="text-light fs-5 text-center fs-2" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em> Demandez votre démo ! </em></p>
+
+            </div>
+
+
+            <div class="col-lg-12 p-5 d-flex justify-content-center col-md-12 col-sm-12 col-12 ">
+
+                <button class="p-4 text-dark text-center" style="border: none; width: 250px; font-size: 18px; background-color: white;">  <a href="" class="text-dark "><em>Démonstration</em> </a></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid" id="contact" style="background: black;">
+
+        <div class="row">
+
+            <div class="col-lg-2 m-4 col-md-3 col-sm-5">
+
+                <img src="assets/images/logo/logo_myespaceo_light.png" style="height: 60px;" alt="MyEspaceo-logo"> <br>
+
+                <div class="m-4">
+
+                    <a href="#" class="text-reset m-1">
+        
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1">
+
+                        <i class="fa-brands fa-twitter" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1">
+
+                        <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1 ">
+
+                        <i class="fa-brands fa-facebook" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-5 m-4">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Entreprise</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="nous.html"><span class="link-contact">Qui sommes nous ?</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="jobs.html"><span class="link-contact"> Nous rejoindre</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="contact.html"><span class="link-contact">Nous contacter</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="mention-legale.html"><span class="link-contact">Mentions légales</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="confidentialite.html"><span class="link-contact">Confidentialité</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light " style="font-size: 18px;" href="Conditions Generales.html"><span class="link-contact">Conditions générales</span> </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-5 m-4">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Découvrir</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="Nos solutions.html"><span class="link-contact">Nos solutions</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="notreExpertise.html"><span class="link-contact">Notre expertise</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="tarif.html"><span class="link-contact">Nos tarifs</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="blog.html"><span class="link-contact">Notre blog</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="centre-d'aide.html"><span class="link-contact">Centre d'aide</span> </a> <br>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 m-4 col-sm-5 col-6">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Studio</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <p class="text-light" style="line-height: 40px;">128 Rue La Boétie,<br>75008 – Paris, France</p> 
+
+                    <a class=" text-light link-contact" style="font-size: 18px;" href=""><span class="link-contact">hello@myespaceo.com</span> </a>
+                    
+                    <p class="text-light">+33 1 76 38 14 65</p> 
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 p-5 text-center">
+
+                <p class="text-light text-center">© 2015-2023 myespaceo.com - MyEspaceo, c’est du vrai tout-en-un !</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+
+</body>
+
+</html>

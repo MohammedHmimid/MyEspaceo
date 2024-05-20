@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs / MyEspaceo</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+
+
+    <style>
+
+        html{
+            overflow-x: hidden;
+        }
+
+        .section-black{
+            z-index: -100;
+            height: 100vh;
+        }
+
+        .link-contact{
+            transition: .5S ease;
+        }
+
+        .link-contact:hover{
+            color: #0f61fd;
+        }
+
+        @media only screen and (max-width: 1000px ){
+    
+            .navbar-nav{
+                background-color: #0f62fdde;
+                border-radius: 25px;
+                width: 100%;
+                text-align: center;
+                color: white;
+            }
+            .HH{
+                display: none;
+            }
+            .link-nav-bar{
+                color: white;
+            }
+
+            .text-reset{
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+       <!-- -----------------  navBar------------------------------ -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; z-index: 99999; width: 100%; height: 70px;">
+            
+        <div class="container-fluid">
+        
+            <button class="navbar-toggler"type="button"data-mdb-toggle="collapse"data-mdb-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+    
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+
+                    <img src="assets/images/logo/logo_myespaceo.png" class="HH" height="80px" alt="">
+
+                </a>
+
+                
+                    <ul class="navbar-nav me-auto  mb-lg-0">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Accueil</a>
+
+                        </li>
+
+                        <div class="btn-group m-4 d-flex justify-content-center">
+
+                            <li><a class="link-nav-bar" href="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> A Propos</a></li>
+
+                            <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" ></li>
+
+                            <ul class="dropdown-menu text-center bg-light p-5">
+
+                            <li><a class="dropdown-item text-primary" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: large;" href="nous.html">Qui sommes nous ?</a></li>
+
+                            <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"" href="notreExpertise.html">Notre expertise</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="btn-group m-4 d-flex justify-content-center">
+
+                            <li><a class="link-nav-bar" href="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Solutions</a></li>
+
+                            <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" ></li>
+
+                            <ul class="dropdown-menu text-center bg-light p-5">
+
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyOfrimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyInterimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyProspectimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MySolusoft</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyMarketimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyComparimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MySectorimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyUrbanimo</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="tarif.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Tarif</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="blog.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Le blog</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="contact.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Contact</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link bg-primary text-light p-2 m-3" style="border-radius: 10px; font-size: 16px;" href="#">Connexion</a>
+
+                        </li>
+
+                    </ul>
+                
+            </div>
+
+
+            <div class="align-items-center d-none m-3 d-sm-flex ">
+             
+                <div class="dropdown">
+
+                    <a class="text-reset me-5 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-linkedin-in" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-twitter" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-instagram" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-facebook" style="color: black;"></i>
+
+                        </a>
+
+                    </a>
+
+                </div>
+
+            </div>
+        
+            
+        
+        </div>
+        
+    </nav>
+
+
+
+<!-- --------------Nous Rejoindre ------------------------------- -->
+
+
+
+    <div class="row p-5 section-black" style="background: black;">
+
+
+        <div class="paragraphes-head m-5 p-5 d-flex" style="flex-direction: column;">
+
+            <p class="fs-6 m-5 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">NOUS REJOINDRE</p>
+
+            <h1 class="display-1 m-5 text-light" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600;">Découvrez nos offres d’emploi</h1>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+<!-- ------------------Jobs-------------------- -->
+
+
+    <div class="row m-5">
+
+        <div class="col-2 col-md-4 col-lg-2 col-sm-5 mt-5">
+
+            <img src="assets/images/logo/Développeur-Full-Stack-Marrakech.jpg" style="height: 200px;" alt="">
+
+        </div>
+
+        <div class="col-lg-10 col-md-8 col-sm-7 mt-5">
+
+            <p class="fs-6 ms-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">NOUS REJOINDRE</p>
+
+            <h6 class=" ms-3" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em> Développeur Full-Stack (Laravel – VueJS) (H/F)</em></h6>
+
+            <p class="fs-6 ms-3 col-12" style="color: black; opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">L’équipe Tech & Product MYESPACEO s’organise autour de 4 pôles : Delivery, Data, Infra et Product.
+                Rattaché(e) au Chef de projet, vous participerez activement au développement de nos applications web ‘Solutions pour les PROs de l’immobilier’ et les projets qui en découlent.</p>
+
+            <a class="ms-3 href="" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Postuler maintenant <i class="fa-solid fa-arrow-right" style="color: #0f61fd;"></i></a>
+
+        </div>
+
+
+
+        <div class="col-2 col-md-4 col-lg-2 col-sm-5 mt-5">
+
+            <img src="assets/images/logo/commercial-b2b-myespaceo-uai-258x258.jpg" style="height: 200px;" alt="">
+
+        </div>
+
+        <div class="col-lg-10 col-md-8 col-sm-7 mt-5">
+
+            <p class="fs-6 ms-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">MYESPACEO FRANCE</p>
+
+            <h6 class=" ms-3" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Commercial B2B (H/F)</em></h6>
+
+            <p class="fs-6 ms-3 col-12" style="color: black; opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">Rattaché (e) à l’équipe commerciale, nous sommes à la recherche d’un commercial (H/F) B2B qui sera en charge de promouvoir et vendre notre solution : interface immobilière tout-en-un destinées à une clientèle de professionnels de l’immobilier, ainsi que de développer notre portefeuille client.</p>
+
+            <a class="ms-3 href="" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Postuler maintenant <i class="fa-solid fa-arrow-right" style="color: #0f61fd;"></i></a>
+
+        </div>
+
+
+
+        <div class="col-2 col-md-4 col-lg-2 col-sm-5 mt-5">
+
+            <img src="assets/images/logo/data-science-uai-258x258.jpg" style="height: 200px;" alt="">
+
+        </div>
+
+        <div class="col-lg-10 col-md-8 col-sm-7 mt-5">
+
+            <p class="fs-6 ms-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">MYESPACEO MAROC</p>
+
+            <h6 class=" ms-3" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Data Scientist (H/F)</em></h6>
+
+            <p class="fs-6 ms-3 col-12" style="color: black; opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">Nous cherchons notre futur.e Data Scientist pour renforcer notre pôle Etudes et produire des modèles de Machine Learning en temps réel !</p>
+
+            <a class="ms-3" href="" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Postuler maintenant <i class="fa-solid fa-arrow-right" style="color: #0f61fd;"></i></a>
+
+        </div>
+
+
+        <div class="col-2 col-md-4 col-lg-2 col-sm-5 mt-5">
+
+            <img src="assets/images/logo/community-manager-uai-258x258.jpg" style="height: 200px;" alt="">
+
+        </div>
+
+        <div class="col-lg-10 col-md-8 col-sm-7 mt-5">
+
+            <p class="fs-6 ms-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">MYESPACEO MAROC</p>
+
+            <h6 class=" ms-3" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Community Manager (H/F)</em></h6>
+
+            <p class="fs-6 ms-3 col-12" style="color: black; opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">MyEspaceo recrute un Community Manager ( H/F) pour renforcer son équipe de marketing& communication et gérer notre présence en ligne.</p>
+
+            <a class="ms-3 href="" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Postuler maintenant <i class="fa-solid fa-arrow-right" style="color: #0f61fd;"></i></a>
+
+        </div>
+
+
+        <div class="col-2 col-md-4 col-lg-2 col-sm-5 mt-5">
+
+            <img src="assets/images/logo/data-byad.jpg" style="height: 200px; width: 200px;" alt="">
+
+        </div>
+
+        <div class="col-lg-10 col-md-8 col-sm-7 mt-5">
+
+            <p class="fs-6 ms-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">MYESPACEO MAROC</p>
+
+            <h6 class=" ms-3" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Data Analyst (H/F)</em></h6>
+
+            <p class="fs-6 ms-3 col-12" style="color: black; opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">Nous investissons sur l’utilisation du cloud, de l’IA, des alliances technologiques, de la réalité virtuelle et de technologies émergentes. Dans ce cadre nous cherchons notre futur.e Data Analyst.</p>
+
+            <a class="ms-3 href="" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Postuler maintenant <i class="fa-solid fa-arrow-right" style="color: #0f61fd;"></i></a>
+
+        </div>
+
+
+        <div class="col-2 col-md-4 col-lg-2 col-sm-5 mt-5">
+
+            <img src="assets/images/logo/designer.jpg" style="height: 200px; width: 200px;" alt="">
+
+        </div>
+
+        <div class="col-lg-10 col-md-8 col-sm-7 mt-5">
+
+            <p class="fs-6 ms-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">MYESPACEO MAROC</p>
+
+            <h6 class=" ms-3" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Designer UI/UX</em></h6>
+
+            <p class="fs-6 ms-3 col-12" style="color: black; opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">Nous recherchons un Designer UI/UX (H/F) autonome et créatif(ve) pour concevoir les éléments graphiques de nos sites et applications métier.</p>
+
+            <a class="ms-3 href="" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Postuler maintenant <i class="fa-solid fa-arrow-right" style="color: #0f61fd;"></i></a>
+
+        </div>
+
+
+        <div class="col-2 col-md-4 col-lg-2 col-sm-5 mt-5">
+
+            <img src="assets/images/logo/traffic-manager.jpg" style="height: 200px; width: 200px;" alt="">
+
+        </div>
+
+        <div class="col-lg-10 col-md-8 col-sm-7 mt-5">
+
+            <p class="fs-6 ms-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">MYESPACEO MAROC</p>
+
+            <h6 class=" ms-3" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Traffic Manager (H/F)</em></h6>
+
+            <p class="fs-6 ms-3 col-12" style="color: black; opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">Actuellement en recherche d'un traffic manager, vous contribuez activement à l’acquisition de nouveaux clients via la gestion de nos différents leviers : SEO, SEA, SMA.</p>
+
+            <a class="ms-3 href="" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Postuler maintenant <i class="fa-solid fa-arrow-right" style="color: #0f61fd;"></i></a>
+
+        </div>
+
+
+        <div class="col-2 col-md-4 col-lg-2 col-sm-5 mt-5">
+
+            <img src="assets/images/logo/designer-motion.jpg" style="height: 200px; width: 200px;" alt="">
+
+        </div>
+
+        <div class="col-lg-10 col-md-8 col-sm-7 mt-5">
+
+            <p class="fs-6 ms-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">MYESPACEO MAROC</p>
+
+            <h6 class=" ms-3" style="color: black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>Designer Motion (H/F)</em></h6>
+
+            <p class="fs-6 ms-3 col-12" style="color: black; opacity: .8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">Pour accompagner nos équipes et notre développement, nous cherchons un(e) Motion Designer.</p>
+
+            <a class="ms-3 href="" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Postuler maintenant <i class="fa-solid fa-arrow-right" style="color: #0f61fd;"></i></a>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid mt-5" id="contact" style="background: black;">
+
+        <div class="row">
+
+            <div class="col-lg-2 m-4 col-md-5 col-sm-5">
+
+                <img src="assets/images/logo/logo_myespaceo_light.png" style="height: 60px;" alt="MyEspaceo-logo"> <br>
+
+                <div class="m-4">
+
+                    <a href="#" class="text-reset m-1">
+        
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1">
+
+                        <i class="fa-brands fa-twitter" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1">
+
+                        <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1 ">
+
+                        <i class="fa-brands fa-facebook" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-sm-5 m-4">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Entreprise</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="nous.html"><span class="link-contact">Qui sommes nous ?</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="jobs.html"><span class="link-contact"> Nous rejoindre</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="contact.html"><span class="link-contact">Nous contacter</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="mention-legale.html"><span class="link-contact">Mentions légales</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="confidentialite.html"><span class="link-contact">Confidentialité</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light " style="font-size: 18px;" href="Conditions Generales.html"><span class="link-contact">Conditions générales</span> </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-sm-5 m-4">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Découvrir</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="Nos solutions.html"><span class="link-contact">Nos solutions</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="notreExpertise.html"><span class="link-contact">Notre expertise</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="tarif.html"><span class="link-contact">Nos tarifs</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="blog.html"><span class="link-contact">Notre blog</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="centre-d'aide.html"><span class="link-contact">Centre d'aide</span> </a> <br>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 m-4 col-sm-5 col-6">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Studio</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <p class="text-light" style="line-height: 40px;">128 Rue La Boétie,<br>75008 – Paris, France</p> 
+
+                    <a class=" text-light link-contact" style="font-size: 18px;" href=""><span class="link-contact">hello@myespaceo.com</span> </a>
+                    
+                    <p class="text-light">+33 1 76 38 14 65</p> 
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 p-5 text-center">
+
+                <p class="text-light text-center">© 2015-2023 myespaceo.com - MyEspaceo, c’est du vrai tout-en-un !</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

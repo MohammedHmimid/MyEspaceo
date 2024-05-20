@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact / MyEspaceo</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+
+
+
+    <style>
+
+        html{
+            overflow-x: hidden;
+        }
+
+        .section-black{
+            z-index: -100;
+            height: 100vh;
+        }
+
+
+        .section2{
+            border-radius: 15px;
+            margin-top: -200px;
+        }
+
+        .head-section2{
+            font-size: 25px;
+            font-weight: 700;
+            color: white;
+            padding: 70px;
+            
+        }
+
+        .paragraphe-section2{
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            padding: 15px;
+        }
+
+        .paragraphe2-section2{
+            font-size: 25px;
+            font-weight: 400;
+            color: rgba(36, 33, 33, 0.589);
+            padding: 20px;
+            
+        }
+
+        .link-contact{
+            transition: .5S ease;
+        }
+
+        .link-contact:hover{
+            color: #0f61fd;
+        }
+
+        @media only screen and (max-width: 1000px ){
+    
+        .navbar-nav{
+            background-color: #0f62fdde;
+            border-radius: 25px;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        .HH{
+            display: none;
+        }
+        .link-nav-bar{
+            color: white;
+        }
+
+        .text-reset{
+            display: none;
+        }
+    }
+
+    </style>
+
+
+
+</head>
+
+<body style="margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; border: none; outline: none;">
+    
+
+
+
+
+
+
+       <!-- -----------------  navBar------------------------------ -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; z-index: 99999; width: 100%; height: 70px;">
+            
+        <div class="container-fluid">
+        
+            <button class="navbar-toggler"type="button"data-mdb-toggle="collapse"data-mdb-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+    
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+
+                    <img src="assets/images/logo/logo_myespaceo.png" class="HH" height="80px" alt="">
+
+                </a>
+
+                
+                    <ul class="navbar-nav me-auto  mb-lg-0">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Accueil</a>
+
+                        </li>
+
+                        <div class="btn-group m-4 d-flex justify-content-center">
+
+                            <li><a class="link-nav-bar" href="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> A Propos</a></li>
+
+                            <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" ></li>
+
+                            <ul class="dropdown-menu text-center bg-light p-5">
+
+                            <li><a class="dropdown-item text-primary" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: large;" href="nous.html">Qui sommes nous ?</a></li>
+
+                            <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;"" href="notreExpertise.html">Notre expertise</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="btn-group m-4 d-flex justify-content-center">
+
+                            <li><a class="link-nav-bar" href="" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Solutions</a></li>
+
+                            <li class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false" ></li>
+
+                            <ul class="dropdown-menu text-center bg-light p-5">
+
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyOfrimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyInterimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyProspectimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MySolusoft</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyMarketimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyComparimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MySectorimo</a></li>
+                                <li><a class="dropdown-item text-primary " style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;" href="#">MyUrbanimo</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="tarif.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Tarif</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="blog.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Le blog</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link m-3 link-nav-bar" href="contact.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Contact</a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link bg-primary text-light p-2 m-3" style="border-radius: 10px; font-size: 16px;" href="#">Connexion</a>
+
+                        </li>
+
+                    </ul>
+                
+            </div>
+
+
+            <div class="align-items-center d-none m-3 d-sm-flex ">
+             
+                <div class="dropdown">
+
+                    <a class="text-reset me-5 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-linkedin-in" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-twitter" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-instagram" style="color: black;"></i>
+
+                        </a>
+
+                        <a href="#" class="text-reset me-3">
+
+                            <i class="fa-brands fa-facebook" style="color: black;"></i>
+
+                        </a>
+
+                    </a>
+
+                </div>
+
+            </div>
+        
+            
+        
+        </div>
+        
+    </nav>
+
+
+
+
+    <!-- -------------------besoin d'aide ------------------------ -->
+
+
+    <div class="row p-5 section-black" style="background: black;">
+
+
+        <div class="paragraphes-head m-5 p-5">
+
+            <p class="fs-6 m-3 col-12" style="color: #0f61fd; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">CONTACTEZ-NOUS !</p>
+
+            <h1 class="display-1 m-3 text-light" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600;">Besoin d’aide ?</h1>
+
+            <p class="lead fs-4  m-3 col-12" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Soucieux de vous répondre au plus vite, merci de privilégier l’appel téléphonique en cas d’urgence.</p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- ----------------departement-------------------- -->
+
+    <div class="row section-body">
+
+        <div class="container-fluid section2 col-lg-10 col-md-10 col-sm-10 col-10" style="background-color: #0f61fd;">
+
+            <div class="row d-flex justify-content-between">
+
+                <div class="col-lg-3 col-sm-5 col-md-5 m-4">
+
+                    <h3 class="text-light fs-4" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Paris</h3>
+
+                    <p class="text-light fs-4 mt-5" style="font-family: serif">Paris 128 Rue de la Boetie 75008  -Paris, France <br> +33 1 76 38 14 65</p>
+
+                </div>
+                <div class="col-lg-3 m-4 col-sm-5 col-md-5">
+
+                    <h3 class="text-light fs-4" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lisbonne</h3>
+
+                    <p class="text-light fs-4 mt-5" style="font-family: serif">Avenue 24 de Julho, 52 1200-649, Lisbonne - Portugal <br> +33 1 76 38 14 65</p>
+
+                </div>
+                <div class="col-lg-3 m-4 col-sm-5 col-md-5">
+
+                    <h3 class="text-light fs-4" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Genève</h3>
+
+                    <p class="text-light fs-4 mt-5" style="font-family: serif">Genève 1 Rue De Pécolat 1201 - Genève, Suisse <br> +33 1 76 38 14 65</p>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-5 col-md-5 m-4">
+
+                    <h3 class="text-light fs-4" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Bruxelles</h3>
+
+                    <p class="text-light fs-4 mt-5" style="font-family: serif">Bruxelles Avenue Louise 54 1050, Bruxelles - Belgique <br> +33 1 76 38 14 65</p>
+
+                </div>
+                <div class="col-lg-3 m-4 col-sm-5 col-md-5">
+
+                    <h3 class="text-light fs-4" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Marrakech</h3>
+
+                    <p class="text-light fs-4 mt-5" style="font-family: serif">Marrakech N° 20 - Avenue My Hassan 40000, Marrakech - Maroc <br> +33 1 76 38 14 65</p>
+
+                </div>
+                <div class="col-lg-3 m-4 col-sm-5 col-md-5">
+
+                    <h3 class="text-light fs-4" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Dubai</h3>
+
+                    <p class="text-light fs-4 mt-5" style="font-family: serif">Dubai Marina Heights Tower 2, Al Khayay Street Dubai - UAE <br> +33 1 76 38 14 65</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+
+
+
+    <div class="row p-5 m-5">
+        
+        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+            <h3 class="fs-1" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: black;"> <b>Contactez-nous !</b></h3>
+
+            <p class="fs-4" style="font-family: serif;">Nous avons simplement besoin de quelques informations et nous vous recontacterons dans les plus brefs délais.</p>
+
+            <div class="d-flex">
+                <i class="fa-solid fa-envelope mt-3" style="color: #135bd8; font-size: 24px;"></i><p class="mt-3 ms-3" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">hello@myespaceo.com</p>
+            </div>
+            <div class="d-flex ">
+                <i class="fa-solid fa-phone mt-3" style="color: #3460ad; font-size: 24px;"></i><p class="mt-3 ms-3" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">+33 1 76 38 14 65</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container-fluid mt-5" id="contact" style="background: black;">
+
+        <div class="row">
+
+            <div class="col-lg-2 m-4 col-md-5 col-sm-5">
+
+                <img src="assets/images/logo/logo_myespaceo_light.png" style="height: 60px;" alt="MyEspaceo-logo"> <br>
+
+                <div class="m-4">
+
+                    <a href="#" class="text-reset m-1">
+        
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1">
+
+                        <i class="fa-brands fa-twitter" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1">
+
+                        <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                    <a href="#" class="text-reset m-1 ">
+
+                        <i class="fa-brands fa-facebook" style="color: #ffffff; font-size: 25px;"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-sm-5 m-4">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Entreprise</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="nous.html"><span class="link-contact">Qui sommes nous ?</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="jobs.html"><span class="link-contact"> Nous rejoindre</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="contact.html"><span class="link-contact">Nous contacter</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="mention-legale.html"><span class="link-contact">Mentions légales</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="confidentialite.html"><span class="link-contact">Confidentialité</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light " style="font-size: 18px;" href="Conditions Generales.html"><span class="link-contact">Conditions générales</span> </a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-5 col-sm-5 m-4">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Découvrir</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="Nos solutions.html"><span class="link-contact">Nos solutions</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="notreExpertise.html"><span class="link-contact">Notre expertise</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="tarif.html"><span class="link-contact">Nos tarifs</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="blog.html"><span class="link-contact">Notre blog</span> </a> <br>
+                    <i class="fa-solid fa-arrow-right" style="color: white;"></i> <a class=" text-light link-contact" style="font-size: 18px;" href="centre-d'aide.html"><span class="link-contact">Centre d'aide</span> </a> <br>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-2 m-4 col-sm-5 col-6">
+
+                <h2 class="m-4 text-light" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Studio</h2>
+
+                <div class="mt-5 ms-3">
+
+                    <p class="text-light" style="line-height: 40px;">128 Rue La Boétie,<br>75008 – Paris, France</p> 
+
+                    <a class=" text-light link-contact" style="font-size: 18px;" href=""><span class="link-contact">hello@myespaceo.com</span> </a>
+                    
+                    <p class="text-light">+33 1 76 38 14 65</p> 
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 p-5 text-center">
+
+                <p class="text-light text-center">© 2015-2023 myespaceo.com - MyEspaceo, c’est du vrai tout-en-un !</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>

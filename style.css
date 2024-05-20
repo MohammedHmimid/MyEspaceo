@@ -1,0 +1,258 @@
+/* ---------------------------------------head-------------------------------- */
+html {
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.back-video{
+    position: absolute;
+    bottom: 0;
+    z-index: -100;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+/* ---------------------------------------------------nav------------------------------------------------------------ */
+
+nav { 
+    transition: all 0.5s ease-in-out;
+}
+
+.link-nav-bar{
+    color: white;
+    transition: .3s ease;
+}
+
+.link-nav-bar:hover{
+    color: #0f61fd;
+}
+
+nav.scrolled {
+    background-color: #0f61fd !important;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+/* --------------------------------------------section2 dyal card zraq---------------------------------------------- */
+
+.section2{
+    border-radius: 15px;
+}
+
+.head-section2{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    padding: 70px;
+}
+
+.paragraphe-section2{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    padding: 15px;
+}
+
+.paragraphe2-section2{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(36, 33, 33, 0.589);
+    padding: 20px;
+    
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------section2---------------------------------------------- */
+
+.card1-Section2{
+    flex-direction: column;
+}
+
+.title-card1-Section2{
+    font-size: 25px;
+    color: #303133;
+}
+
+.paragraphe-cardSection2{
+    font-size: 18px;
+    padding: 30px;
+    padding-right: 20px;
+    line-height: 40px;
+    color: #303133;
+}
+
+.title-card2-Section2{
+    font-size: 25px;
+}
+
+.card2-section2{
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* --------------------------- la brohure------------------------------- */
+
+
+
+
+.section3{
+    height: 500px;
+}
+
+.title-Section3{
+    padding-left: 60px;
+    padding-top: 100px;
+}
+
+.paragraphe-section3{
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.div-boutton-section3{
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.boutton-section3{
+    padding: 20px;
+    border: none;
+    transition: 0.7s;
+}
+
+.boutton-section3:hover{
+    color:white;
+    border: 1px solid white;
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------scetion tarif------------------------------------------------------ */
+
+
+
+.buton-card{
+    background: #0f61fd;
+    color:  white;
+    border: none;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 5px;
+    transition: .8s;
+}
+
+.buton-card:hover{
+    background: transparent;
+    color: #0f61fd;
+    border: 1px solid #0f61fd ;
+}
+
+.buton2-card{
+    background: #0f61fd;
+    color:  white;
+    border: none;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    transition: .8s;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.buton2-card:hover{
+    background: transparent;
+    color: #0f61fd;
+    border: 1px solid #0f61fd ;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------link contact------------------------- */
+
+.link-contact{
+    transition: .5s ease;
+}
+
+.link-contact:hover{
+    color: #0f61fd;
+}
+
+
+
+@media only screen and (max-width: 1000px ){
+    
+    .navbar-nav{
+        background-color: #0f62fdde;
+        border-radius: 25px;
+        width: 100%;
+    }
+    .HH{
+        display: none;
+    }
+    .text-reset{
+        display: none;
+    }
+
+
+}
